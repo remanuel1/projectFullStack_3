@@ -1,0 +1,154 @@
+/* **********************
+****  template home  ****
+********************** */
+
+.template_home {
+    background-color: mediumslateblue;
+    color: white;
+    font-family: "popipins", sans-serif;
+    min-height: 100vh;
+}
+
+.template_home h1 {
+    font-size: 50px;
+}
+
+.template_home h1, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_home form input,
+form button {
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 30px;
+    border: none;
+    background: white;
+    border-radius: 50px;
+}
+
+.template_home form button {
+    color: rgb(255,200,0);
+    background: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.template_home form button:hover {
+    color: white;
+    background: rgb(255,200,0);
+}
+
+.template_home fa-solid {
+    margin-left: -10px;
+}
+
+.template_home todo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_home todo_list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.template_home todo {
+    margin: 10px;
+    padding-left: 10px;
+    background: white;
+    color: black;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+.template_home todo li {
+    flex: 1;
+}
+
+.template_home trash_btn, 
+complete_btn {
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.template_home complete_btn {
+    background: rgb(255, 200, 0);
+}
+
+.template_home trash_btn {
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    background: rgb(171, 171, 171);
+}
+
+.template_home todo_item {
+    padding: 0px 5px;
+}
+
+.template_home fa-trash, 
+fa-check-circle {
+    pointer-events: none;
+}
+
+.template_home completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.template_home slide {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+template_home select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.template_home div_select {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.template_home select {
+    color:rgb(255, 200, 0);
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+.template_home div_select::after {
+    content: "\25BC";
+    position: absolute;
+    background:rgb(255, 200, 0);
+    top: 0;
+    right: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.template_home div_select::hover::after {
+    background: white;
+    color: rgb(255, 200, 0);
+}
